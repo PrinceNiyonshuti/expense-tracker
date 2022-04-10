@@ -1,9 +1,10 @@
 import './App.css';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-      <h1>Expense Tracker</h1>
+      <Layout/>
     </div>
   );
 }
