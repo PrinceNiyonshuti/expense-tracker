@@ -1,6 +1,9 @@
 # Expense Tracker
 
 web based app that can help you track a range of expenses. You enter incoming and outgoing money and the app can help you store and track that information.
+
+## Resources 
+
 ## Available Scripts
 
 In the project directory, you can run:
