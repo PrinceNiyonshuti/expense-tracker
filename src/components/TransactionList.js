@@ -1,11 +1,10 @@
 /** @format */
 
 import React, { useContext } from "react";
-import { Transaction } from "./Transaction";
+import Transaction from "./Transaction";
+import { GlobalContext } from "../redux/GlobalState";
 
-import { GlobalContext } from "../context/GlobalState";
-
-export const TransactionList = () => {
+function TransactionList() {
 	const { transactions } = useContext(GlobalContext);
 
 	return (
@@ -18,4 +17,6 @@ export const TransactionList = () => {
 			</ul>
 		</>
 	);
-};
+}
+
+export default TransactionList;

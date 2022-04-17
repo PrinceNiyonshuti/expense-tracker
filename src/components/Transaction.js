@@ -1,13 +1,13 @@
 /** @format */
 
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../redux/GlobalState";
 
 //Money formatter function
 function moneyFormatter(num) {
 	let p = num.toFixed(2).split(".");
 	return (
-		"$ " +
+		"Rwf " +
 		p[0]
 			.split("")
 			.reverse()
@@ -18,8 +18,7 @@ function moneyFormatter(num) {
 		p[1]
 	);
 }
-
-export const Transaction = ({ transaction }) => {
+function Transaction({ transaction }) {
 	const { deleteTransaction } = useContext(GlobalContext);
 
 	const sign = transaction.amount < 0 ? "-" : "+";
@@ -38,4 +37,6 @@ export const Transaction = ({ transaction }) => {
 			</button>
 		</li>
 	);
-};
+}
+
+export default Transaction;
