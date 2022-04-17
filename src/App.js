@@ -5,7 +5,6 @@ import AddExpense from "./components/AddExpense";
 import Balance from "./components/Balance";
 import Header from "./components/Header";
 import IncomeExpense from "./components/IncomeExpense";
-import Layout from "./components/Layout";
 
 function App() {
 	return (
@@ -13,10 +12,9 @@ function App() {
 			<Header />
 			<div className="container">
 				<Balance />
-        <IncomeExpense />
-        <AddExpense/>
+				<IncomeExpense />
+				<AddExpense/>
 			</div>
-			{/* <Layout /> */}
 		</div>
 	);
 }
