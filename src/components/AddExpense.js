@@ -26,12 +26,12 @@ function AddExpense() {
 			<h3>Add new transaction</h3>
 			<form onSubmit={onSubmit}>
 				<div className="form-control">
-					<label htmlFor="text">Text</label>
+					<label htmlFor="text">Expense Name</label>
 					<input
 						type="text"
 						value={text}
 						onChange={(e) => setText(e.target.value)}
-						placeholder="Enter text..."
+						placeholder="Enter Expense Name..."
 					/>
 				</div>
 				<div className="form-control">
